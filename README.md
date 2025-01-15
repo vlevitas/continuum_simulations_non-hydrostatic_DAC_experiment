@@ -1,5 +1,5 @@
 # continuum_simulations_non-hydrostatic_DAC_experiment
-Macroscale continuum simulations to model plastic strain-induced phase transformation in zirconium (Zr) deformed under high-pressure and severe plastic deformation in non-hydrostatic diamond anvil cell (DAC) experiment. 
+Macroscale continuum simulations to model plastic strain-induced phase transformation in zirconium (Zr) under high-pressure deformed under compression in non-hydrostatic diamond anvil cell (DAC) experiment. 
 These files are for running a FEM simulation in Abaqus. 
 1. "geom.inp" is the file that describes the geometrical model, material parameters, solver details and solution storage details of the non-hydrostatic diamond anvil cell experiment.
 2. "mat_model.for" is the user-defined material subroutine (in FORTRAN) that describes the material models of both the sample (Zr) and diamond. Diamond has non-linear elastic model. The elasticity in the sample is governed by non-linear Murnaghan elastic model, the yield condition is the von Mises condition with pressure dependent yield strength, the plastic-flow rule is J-2 plasticity (no volume change due to plasticity), coupled with plastic-strain induced kinetic equation.
